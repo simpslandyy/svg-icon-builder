@@ -29,7 +29,7 @@ const convertDefs = (type, def) => {
   }
 }
 
-const getIconData = (name, variant='bubblegum') => {
+const getIconData = (name) => {
   const { viewBox, shapes, attrs, defs, ...rest } = IconRepo.find(i => i.name === name)
 
   const convertedShapes = shapes.map((shape, idx) => {
